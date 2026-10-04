@@ -13,10 +13,13 @@
   * { box-sizing: border-box; }
   body { margin:0; background:var(--fond); color:var(--encre);
          font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
-  main { max-width:44rem; margin:0 auto; padding:2.5rem 1.25rem 4rem; }
+  nav { max-width:44rem; margin:0 auto; padding:1.2rem 1.25rem 0; display:flex; flex-wrap:wrap; gap:.4rem 1.2rem; font-size:.9rem; }
+  nav a { color:var(--doux); text-decoration:none; }
+  nav a[aria-current="page"] { color:var(--encre); font-weight:650; }
+  nav a:hover { color:var(--accent); }
+  main { max-width:44rem; margin:0 auto; padding:1.5rem 1.25rem 3rem; }
   h1 { font-size:1.9rem; line-height:1.2; margin:0 0 .5rem; }
   h2 { font-size:1.25rem; margin:2.4rem 0 .6rem; padding-top:1.4rem; border-top:1px solid var(--trait); }
-  p, li { color:var(--encre); }
   strong { font-weight:650; }
   a { color:var(--accent); }
   hr { border:0; border-top:1px solid var(--trait); margin:2rem 0; }
@@ -25,9 +28,16 @@
   th { color:var(--doux); font-weight:600; }
   code { background:var(--trait); padding:.1em .35em; border-radius:4px; font-size:.92em; }
   blockquote { margin:1rem 0; padding:.1rem 1rem; border-left:3px solid var(--accent); color:var(--doux); }
+  footer { max-width:44rem; margin:0 auto; padding:1.5rem 1.25rem 3rem; border-top:1px solid var(--trait);
+           color:var(--doux); font-size:.85rem; }
 </style>
 </head>
 <body>
+<nav aria-label="Pages">
+    <a href="./" aria-current="page">Confidentialité</a>
+    <a href="suppression-de-compte/">Supprimer mon compte</a>
+    <a href="assistance/">Assistance</a>
+</nav>
 <main>
 <h1>Politique de confidentialité — application Cité Renaissance</h1>
 <p><strong>Dernière mise à jour : 4 octobre 2026</strong></p>
@@ -36,8 +46,10 @@ de temps elles restent, et ce que tu peux exiger. Elle est écrite pour être
 lue, pas pour se protéger derrière du jargon.</p>
 <hr>
 <h2>Qui est responsable de ces données</h2>
-<p><code>[NOM JURIDIQUE DE L&#39;ASBL]</code>, <code>[ADRESSE]</code>, Belgique.</p>
-<p>Pour toute question ou demande concernant tes données : <strong><code>[ADRESSE E-MAIL DE CONTACT]</code></strong>.</p>
+<p><strong>La Cité de la Renaissance</strong> (CDR), association sans but lucratif.</p>
+<p>Rue Harenheyde 66, 1130 Bruxelles, Belgique.
+Numéro d&#39;entreprise : 1004.198.240.</p>
+<p>Pour toute question ou demande concernant tes données : <strong><a href="mailto:lacitedelarenaissance@gmail.com">lacitedelarenaissance@gmail.com</a></strong>.</p>
 <hr>
 <h2>Ce que l&#39;application recueille</h2>
 <p><strong>Ton identité de membre.</strong> Ton nom d&#39;affichage, ton adresse e-mail (elle sert
@@ -70,8 +82,9 @@ maladie, un deuil, un conflit familial.</p>
 Pas par les responsables des autres équipes. Pas par le secrétariat.
 <strong>Pas même par l&#39;administrateur de l&#39;application</strong> — c&#39;est la seule chose de
 toute l&#39;application qui lui échappe, et c&#39;est délibéré.</p>
-<p>Tu peux aussi déposer une demande <strong>anonymement</strong>. Dans ce cas, ton nom n&#39;est
-associé à la demande nulle part, y compris en base de données.</p>
+<p>La demande est enregistrée avec ton nom : <strong>l&#39;équipe de prière sait qui l&#39;a
+écrite</strong>, et elle est la seule à pouvoir la lire. Si tu préfères que ton nom
+ne figure pas, confie ta demande de vive voix plutôt que par l&#39;application.</p>
 <hr>
 <h2>Les fiches des enfants</h2>
 <p>RENAISSANCE KIDS conserve des informations sur des mineurs : identité,
@@ -80,8 +93,9 @@ jugent nécessaires à leur sécurité.</p>
 <p>Ces fiches <strong>ne sortent pas de l&#39;équipe RENAISSANCE KIDS</strong>.</p>
 <p>Elles ne sont créées qu&#39;avec <strong>l&#39;accord écrit d&#39;un parent ou du titulaire de
 l&#39;autorité parentale</strong>, et cet accord peut être retiré à tout moment : la
-fiche est alors supprimée. Les fiches sont effacées au plus tard <strong>un an après
-que l&#39;enfant a cessé de fréquenter l&#39;activité</strong>.</p>
+fiche est alors supprimée. Une fiche est aussi supprimée quand l&#39;enfant cesse de
+fréquenter l&#39;activité : c&#39;est l&#39;équipe RENAISSANCE KIDS qui la retire, à la main,
+et <strong>il n&#39;existe pas encore d&#39;effacement automatique</strong> pour ces fiches.</p>
 <p>Un parent peut à tout moment demander à voir la fiche de son enfant, la faire
 corriger, ou la faire supprimer.</p>
 <hr>
@@ -125,7 +139,7 @@ accord</strong>, et tu peux le retirer.</p>
 </tr>
 <tr>
 <td>Fiches des enfants</td>
-<td>1 an après la fin de la fréquentation</td>
+<td>Tant que l&#39;enfant fréquente l&#39;activité ; supprimées sur demande des parents ou à son départ, par l&#39;équipe</td>
 </tr>
 <tr>
 <td>Journal d&#39;administration</td>
@@ -176,13 +190,15 @@ compétences, ta présence dans l&#39;annuaire, et les notifications.</p>
 confirmer, parce que c&#39;est définitif. Ta fiche, tes adhésions et ton accès
 disparaissent ; ce que tu as créé pour l&#39;église — un événement, une tâche, une
 annonce — reste, sans ton nom.</p>
+<p>Si tu n&#39;as plus accès à l&#39;application, la page <a href="suppression-de-compte/">Supprimer mon compte</a>
+explique comment faire par e-mail.</p>
 <p>L&#39;administration reçoit une notification de ton départ. Elle ne porte rien
 d&#39;autre que ton nom et la date : elle sert à refaire les plannings où tu étais
 attendu, et elle s&#39;efface d&#39;elle-même au bout de six mois.</p>
 <p>Une seule exception : <strong>le dernier administrateur actif ne peut pas partir</strong>
 tant qu&#39;un autre n&#39;a pas été nommé. Sans lui, plus personne ne pourrait ouvrir
 d&#39;accès, et l&#39;église resterait enfermée dehors.</p>
-<p>Pour le reste, écris à <strong><code>[ADRESSE E-MAIL DE CONTACT]</code></strong>. <strong>Nous répondons
+<p>Pour le reste, écris à <strong><a href="mailto:lacitedelarenaissance@gmail.com">lacitedelarenaissance@gmail.com</a></strong>. <strong>Nous répondons
 dans un délai d&#39;un mois</strong> — c&#39;est le délai que fixe le RGPD, et nous nous y
 tenons.</p>
 <p>Si la réponse ne te satisfait pas, tu peux saisir l&#39;<strong>Autorité de protection
@@ -205,11 +221,13 @@ dire que de le cacher.</p>
 supprimé une fiche, qui a changé un rôle. Un journal qu&#39;on peut effacer ne
 protège plus personne — c&#39;est justement contre les abus d&#39;administration qu&#39;il
 existe.</p>
+<p>Il ne concerne que les personnes qui ont effectué des actions d&#39;administration,
+et il n&#39;est lisible que par l&#39;administration. <strong>Si tu y figures, ton nom y est
+conservé</strong> après la suppression de ton compte.</p>
 <p><strong>Les décisions prises.</strong> Quand un responsable accepte ou refuse une
 proposition, cette décision reste. Elle appartient à l&#39;histoire de l&#39;équipe,
-pas seulement à celui qui l&#39;a écrite.</p>
-<p>Dans les deux cas, en cas de demande d&#39;effacement, <strong>ton nom est retiré et
-remplacé par une mention anonyme</strong>. L&#39;action reste, la personne disparaît.</p>
+pas seulement à celui qui l&#39;a écrite. Le lien vers toi est retiré : la décision
+subsiste, sans ton nom.</p>
 <hr>
 <h2>Sécurité</h2>
 <p>L&#39;accès aux données est contrôlé par le serveur lui-même, pas par
@@ -225,5 +243,9 @@ l&#39;administrateur — ne peut lire le tien.</p>
 l&#39;application. La date en haut de page indique la dernière version.</p>
 
 </main>
+<footer>
+  La Cité de la Renaissance (CDR) — association sans but lucratif · Rue Harenheyde 66, 1130 Bruxelles ·
+  Numéro d'entreprise 1004.198.240 · <a href="mailto:lacitedelarenaissance@gmail.com">lacitedelarenaissance@gmail.com</a>
+</footer>
 </body>
 </html>
